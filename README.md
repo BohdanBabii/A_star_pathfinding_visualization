@@ -4,7 +4,7 @@
 
 ## Description
 
-This A* Pathfinding Visualization tool is designed to illustrate the workings of the A* algorithm—a highly efficient and widely used pathfinding and graph traversal algorithm. It visually simulates the process of finding the shortest path between two points, making it an excellent educational tool for students and enthusiasts interested in computer science and algorithmic concepts.
+This A* Pathfinding Visualization tool is designed to illustrate the workings of the A* algorithm—a highly efficient and widely used pathfinding and graph traversal algorithm. It visually simulates the process of finding the shortest path between two points.
 
 ## Features
 
