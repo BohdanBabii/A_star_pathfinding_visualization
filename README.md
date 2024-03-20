@@ -44,7 +44,7 @@ python main.py
 ## Usage
 
 - Left-click to place or remove obstacles.
-- Right-click to select and move the start (green) and end (red) points.
+- Right-click to select and move the start (orange) and end (blue) points.
 - Press 'Space' to begin the pathfinding.
-- Press 'C' to clear the grid and start over.
-- Press 'M' to generate a random maze.
+- Press 'c' to clear the grid and start over.
+- Press 'm' to generate a random maze.
