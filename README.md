@@ -1,5 +1,5 @@
 # A* Pathfinding Visualization
-![Example](Image/Example_maze.png)
+![Example](Example_maze.png)
 
 ## Description
 
