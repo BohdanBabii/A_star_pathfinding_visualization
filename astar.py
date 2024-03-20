@@ -2,19 +2,51 @@ import pygame
 from queue import PriorityQueue
 from config import PURPLE
 
-
 def h(p1, p2):
+    """
+    Heuristic function to estimate the distance between two points using Manhattan distance.
+
+    Args:
+        p1 (tuple): Coordinates of the first point (x, y).
+        p2 (tuple): Coordinates of the second point (x, y).
+
+    Returns:
+        int: Manhattan distance between the two points.
+    """
     x1, y1 = p1
     x2, y2 = p2
     return abs(x1 - x2) + abs(y1 - y2)
 
 def reconstruct_path(came_from, current, draw):
+    """
+    Reconstructs the path from start to end by following the came_from dictionary.
+
+    Args:
+        came_from (dict): Dictionary containing the path information.
+        current (Node): Current node to reconstruct the path from.
+        draw (function): Function to draw the grid.
+
+    Returns:
+        None
+    """
     while current in came_from:
         current = came_from[current]
         current.make_path()
         draw()
 
 def algorithm(draw, grid, start, end):
+    """
+    A* algorithm to find the shortest path from start to end on a given grid.
+
+    Args:
+        draw (function): Function to draw the grid.
+        grid (2D list): 2D list representing the grid.
+        start (Node): Starting node of the path.
+        end (Node): Ending node of the path.
+
+    Returns:
+        bool: True if path is found, False otherwise.
+    """
     count = 0
     open_set = PriorityQueue()
     open_set.put((0, count, start))
